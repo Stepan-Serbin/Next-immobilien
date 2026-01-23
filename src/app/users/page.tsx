@@ -30,6 +30,8 @@ export default UsersPage;
 // Build -- render
 // User #1 ---> /about -> send html response
 
+// еще один вариант SSG - когда фетч запрос cache: "force-cache"
+
 // 2. SSR - server site rendering
 // - каждый раз выполняется запрос на сервере когда пользователь стучится на страницу
 //  cache: "no-store", мы должны указать
