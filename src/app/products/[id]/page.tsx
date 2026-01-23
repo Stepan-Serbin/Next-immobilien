@@ -1,6 +1,6 @@
 import { Product } from "@/common/types/Product";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import ProductCarousel from "@/components/product-carousel";
 
 async function fetchProduct(id: string): Promise<Product> {
   const res = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`, {
@@ -26,7 +26,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> }) => {
     <div>
       <h2>{product.title}</h2>
       <p>{product.description}</p>
-      <Image></Image>
+      <ProductCarousel images={product.images} />
     </div>
   );
 };
