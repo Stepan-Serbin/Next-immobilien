@@ -1,5 +1,13 @@
+import {
+  boolean,
+  integer,
+  pgTable,
+  serial,
+  text,
+  timestamp,
+  varchar,
+} from "drizzle-orm/pg-core";
 
-import { boolean, integer, pgTable, serial, text, timestamp, varchar } from "drizzle-orm/pg-core";
 export const postsTable = pgTable("posts", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   title: varchar({ length: 255 }).notNull(),
@@ -13,10 +21,8 @@ export const reviewsTable = pgTable("reviews", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
-
-
-// npm run db:generate - сгенерирует файл с миграциями SQL
-// npm run db:migrate
+// npm run db:generate  - сгененерирует файл с миграциями SQL
+// npm run db:migrate  -
 
 export const users = pgTable("users", {
   id: serial().primaryKey(),
