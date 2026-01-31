@@ -48,3 +48,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 // 6. страница где отображаются 
 // 7. серверное действие для удаления
 // 8. добавить кнопку удаления с использованием server action
+
+
+Префиксы для названий коммитов:
+
+- "fix: navlink to homepage" - исправили что-то
+- "feat: delete btn for todos" - добавление нового функционала
+- "style: login page" - стилизовали страничку регистрации
+- "refactor: sum function" - 
+- "perf: sum function" - улучшили perfomance - сделали чтобы быстрее работала
+- "build: update config" -изменения для того чтобы билд проходил
+- "chore: add biome" - работа по дому (настройки которые не меняют сам код, например настройка eslint)
