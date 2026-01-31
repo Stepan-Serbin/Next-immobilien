@@ -1,0 +1,93 @@
+[1mdiff --cc README.md[m
+[1mindex e215bc4,42caada..0000000[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@@ -34,3 -34,28 +34,31 @@@[m [mYou can check out [the Next.js GitHub r[m
+  The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.[m
+  [m
+  Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.[m
+[32m++<<<<<<< HEAD[m
+[32m++=======[m
+[32m+ [m
+[32m+ [m
+[32m+ ## Render [m
+[32m+ - SSG - это когда для всех сгенерирован один и тот же код на серевере[m
+[32m+ [m
+[32m+ [m
+[32m+ // 1. создадим schema для db[m
+[32m+ // 2. сгенерировать миграцию[m
+[32m+ // 3. провести миграции - мигрировать [m
+[32m+ // 4. server action для добавления [m
+[32m+ // 5. серверный или клиентский компонент form, где используется серверное действие[m
+[32m+ // 6. страница где отображаются [m
+[32m+ // 7. серверное действие для удаления[m
+[32m+ // 8. добавить кнопку удаления с использованием server action[m
+[32m+ [m
+[32m+ [m
+[32m+ Префиксы для названий коммитов:[m
+[32m+ [m
+[32m+ - "fix: navlink to homepage" - исправили что-то[m
+[32m+ - "feat: delete btn for todos" - добавление нового функционала[m
+[32m+ - "style: login page" - стилизовали страничку регистрации[m
+[32m+ - "refactor: sum function" - [m
+[32m+ - "perf: sum function" - улучшили perfomance - сделали чтобы быстрее работала[m
+[32m+ - "build: update config" -изменения для того чтобы билд проходил[m
+[32m+ - "chore: add biome" - работа по дому (настройки которые не меняют сам код, например настройка eslint)[m
+[32m++>>>>>>> todo[m
+[1mdiff --cc next.config.ts[m
+[1mindex e9ffa30,4867620..0000000[m
+[1m--- a/next.config.ts[m
+[1m+++ b/next.config.ts[m
+[36m@@@ -1,7 -1,9 +1,13 @@@[m
+  import type { NextConfig } from "next";[m
+  [m
+  const nextConfig: NextConfig = {[m
+[32m++<<<<<<< HEAD[m
+[32m +  /* config options here */[m
+[32m++=======[m
+[32m+   images: {[m
+[32m+     remotePatterns: [new URL("https://cdn.iconscout.com/icon/free/**")],[m
+[32m+   },[m
+[32m++>>>>>>> todo[m
+  };[m
+  [m
+  export default nextConfig;[m
+[1mdiff --cc package-lock.json[m
+[1mindex fa93485,5ee43d4..0000000[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@@ -1,30 -1,46 +1,68 @@@[m
+  {[m
+[32m++<<<<<<< HEAD[m
+[32m +  "name": "immobilien",[m
+[32m++=======[m
+[32m+   "name": "my-app",[m
+[32m++>>>>>>> todo[m
+    "version": "0.1.0",[m
+    "lockfileVersion": 3,[m
+    "requires": true,[m
+    "packages": {[m
+      "": {[m
+[32m++<<<<<<< HEAD[m
+[32m +      "name": "immobilien",[m
+[32m +      "version": "0.1.0",[m
+[32m +      "dependencies": {[m
+[32m +        "next": "16.1.4",[m
+[32m +        "react": "19.2.3",[m
+[32m +        "react-dom": "19.2.3"[m
+[32m++=======[m
+[32m+       "name": "my-app",[m
+[32m+       "version": "0.1.0",[m
+[32m+       "dependencies": {[m
+[32m+         "@radix-ui/react-slot": "^1.2.4",[m
+[32m+         "class-variance-authority": "^0.7.1",[m
+[32m+         "clsx": "^2.1.1",[m
+[32m+         "dotenv": "^17.2.3",[m
+[32m+         "drizzle-orm": "^0.45.1",[m
+[32m+         "embla-carousel-react": "^8.6.0",[m
+[32m+         "lucide-react": "^0.563.0",[m
+[32m+         "next": "16.1.4",[m
+[32m+         "next-auth": "^4.24.13",[m
+[32m+         "pg": "^8.17.2",[m
+[32m+         "postgres": "^3.4.8",[m
+[32m+      

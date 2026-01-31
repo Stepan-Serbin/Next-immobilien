@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Render 
+- SSG - это когда для всех сгенерирован один и тот же код на серевере
+
+
+// 1. создадим schema для db
+// 2. сгенерировать миграцию
+// 3. провести миграции - мигрировать 
+// 4. server action для добавления 
+// 5. серверный или клиентский компонент form, где используется серверное действие
+// 6. страница где отображаются 
+// 7. серверное действие для удаления
+// 8. добавить кнопку удаления с использованием server action
+
+
+Префиксы для названий коммитов:
+
+- "fix: navlink to homepage" - исправили что-то
+- "feat: delete btn for todos" - добавление нового функционала
+- "style: login page" - стилизовали страничку регистрации
+- "refactor: sum function" - 
+- "perf: sum function" - улучшили perfomance - сделали чтобы быстрее работала
+- "build: update config" -изменения для того чтобы билд проходил
+- "chore: add biome" - работа по дому (настройки которые не меняют сам код, например настройка eslint)
